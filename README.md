@@ -8,6 +8,9 @@ We provide scripts to run the algorithms, which are put under `scripts/`. Here i
 cd scripts
 bash fed.sh
 ```
+To run ResNet homo-family setting simply put arch_family='resnet'.
+To run VGG homo-family setting simply put arch_family='vgg'.
+To run hetero-family setting simply put arch_family='hetero'.
 
 The descriptions of parameters are as follows:
 | Parameter | Description |
@@ -32,9 +35,4 @@ The descriptions of parameters are as follows:
 | noise        | The maximum variance of Gaussian noise added to local party `TODO: what's loacl party?` |
 | gpu          | The IDs of GPU to use. E.g., `TODO` |
 | print_freq   | The frequency to print training logs. E.g., with `print_freq=10`, training logs are displayed every 10 communication rounds. |
-
-
-## References: 
-* Be your Own Teacher, [[Code](https://github.com/luanyunteng/pytorch-be-your-own-teacher/blob/master/train.py)]
-* KD, [[Code](https://github.com/JoonyoungYi/KD-pytorch/blob/master/trainer.py)].
 
